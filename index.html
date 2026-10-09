@@ -891,6 +891,20 @@ body.cover-active{ overflow:hidden; }
   margin-top:4px;
   line-height:1.5;
 }
+.branch-phone{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:9px;
+  font-family:var(--font-sans);
+  font-size:11.5px;
+  font-weight:600;
+  letter-spacing:0.04em;
+  color:var(--copper-deep);
+  transition:color .3s var(--ease);
+}
+.branch-phone svg{ width:13px; height:13px; flex-shrink:0; }
+.branch-phone:hover{ color:var(--copper); text-decoration:underline; }
 
 /* ============================================================
    7. RSVP & CONTACT ACTIONS
@@ -920,15 +934,6 @@ body.cover-active{ overflow:hidden; }
   font-size:14px;
   color:var(--ink-soft);
   line-height:1.7;
-}
-.host-phone{
-  display:inline-block;
-  font-family:var(--font-sans);
-  font-weight:700;
-  font-size:15px;
-  color:var(--copper-deep);
-  margin-top:8px;
-  letter-spacing:0.05em;
 }
 .rsvp-actions{
   display:flex;
@@ -1320,6 +1325,10 @@ body.cover-active{ overflow:hidden; }
             <span class="branch-label">Parents</span>
             <div class="branch-names">Mr. Hassan Mohammed<span class="amp">&amp;</span>Mrs. Seenath</div>
             <div class="branch-residence">Vadakkethil House, Kanjirakadavu, Ottapalam, Palakkad Dt.</div>
+            <a class="branch-phone" href="tel:+919847762876">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 98477 62876
+            </a>
           </div>
 
           <div class="divider" style="margin:16px auto;"></div>
@@ -1343,6 +1352,10 @@ body.cover-active{ overflow:hidden; }
             <span class="branch-label">Parents</span>
             <div class="branch-names">Mr. Naushad<span class="amp">&amp;</span>Mrs. Reshma Naushad</div>
             <div class="branch-residence">Kootungaparambil House, P.O. Thalikulam, Thrissur Dist.</div>
+            <a class="branch-phone" href="tel:+918129266241">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 81292 66241
+            </a>
           </div>
 
           <div class="divider" style="margin:16px auto;"></div>
@@ -1371,13 +1384,15 @@ body.cover-active{ overflow:hidden; }
         </p>
 
         <div class="rsvp-host-info">
-          <div class="host-title">Mr. Hassan Mohammed &amp; Mrs. Seenath</div>
-          <div class="host-address">Vadakkethil House, Kanjirakadavu, Ottapalam, Palakkad Dt.</div>
-          <a class="host-phone" href="tel:+919847762876">Mob: +91 9847762876</a>
+          <div class="host-title">Hosted with Love by</div>
+          <div class="host-address">
+            Mr. Hassan Mohammed &amp; Mrs. Seenath · Ottapalam<br>
+            Mr. Naushad &amp; Mrs. Reshma Naushad · Thalikulam
+          </div>
         </div>
 
         <div class="rsvp-actions">
-          <a class="btn btn-primary" href="https://wa.me/919847762876?text=Dear%20Mr.%20Hassan%20Mohammed%20%26%20Family%2C%20Heartiest%20congratulations%20on%20the%20marriage%20of%20Mohammed%20Hazeel%20%26%20Dr.%20Nazrin %20Naushad!%20Sending%20our%20warmest%20wishes%20and%20prayers." target="_blank" rel="noopener">
+          <a class="btn btn-primary" href="https://wa.me/919847762876?text=Dear%20Mr.%20Hassan%20Mohammed%20%26%20Family%2C%20Heartiest%20congratulations%20on%20the%20marriage%20of%20Mohammed%20Hazeel%20%26%20Dr.%20Nazrin%20Naushad!%20Sending%20our%20warmest%20wishes%20and%20prayers." target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.77.462 3.498 1.34 5.023L2 22l5.097-1.336A10.024 10.024 0 0 0 12.031 22C17.568 22 22 17.505 22 12.031c0-5.536-4.432-10.031-9.969-10.031zm0 18.277c-1.558 0-3.08-.418-4.408-1.21l-.316-.188-3.275.86.874-3.193-.207-.328A8.257 8.257 0 0 1 3.754 12.03c0-4.564 3.713-8.277 8.277-8.277 4.565 0 8.277 3.713 8.277 8.277 0 4.564-3.712 8.277-8.277 8.277zm4.537-6.208c-.248-.124-1.47-.726-1.697-.808-.228-.083-.393-.124-.56.124-.165.248-.644.808-.788.973-.145.165-.29.186-.538.062-.248-.124-1.047-.386-1.995-1.232-.738-.658-1.237-1.47-1.381-1.718-.145-.248-.016-.382.108-.506.112-.111.248-.29.373-.435.124-.145.165-.248.248-.414.083-.165.041-.31-.02-.435-.063-.124-.56-1.348-.767-1.846-.202-.486-.407-.42-.56-.428l-.477-.008c-.165 0-.435.062-.663.31-.228.248-.87.85-8.7 2.072 0 1.222.89 2.404 1.014 2.57.124.165 1.75 2.673 4.24 3.748.592.256 1.055.409 1.416.523.595.19 1.136.163 1.564.099.477-.071 1.47-.601 1.677-1.182.207-.58.207-1.077.145-1.182-.062-.104-.228-.166-.476-.29z"/></svg>
             Send Wishes on WhatsApp
           </a>
